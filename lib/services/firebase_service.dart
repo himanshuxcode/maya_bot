@@ -52,8 +52,6 @@ class FirebaseService {
           .collection('users')
           .doc(userId)
           .collection("questions")
-          .doc(question)
-          .collection("ques")
           .add({"question": question, "answer": answer});
     } catch (e) {
       print('Error adding question and answer: $e');
@@ -69,6 +67,7 @@ class FirebaseService {
       CollectionReference questionsCollection =
           _firestore.collection('users').doc(userId).collection('questions');
 
+      print(questionsCollection.snapshots().length);
       return questionsCollection.snapshots();
     } catch (e) {
       print('Error getting question list: $e');
