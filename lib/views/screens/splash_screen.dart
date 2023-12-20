@@ -21,7 +21,7 @@ class _SplashScreenState extends State<SplashScreen> {
 
   Future<void> navigate() async {
     try {
-      Future.delayed(Duration(seconds: 1));
+      await Future.delayed(Duration(seconds: 2));
       await FirebaseService.initializeApp();
       bool isUserLoggedIn = await FirebaseService.checkUser();
       if (isUserLoggedIn) {
@@ -48,9 +48,9 @@ class _SplashScreenState extends State<SplashScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Theme.of(context).primaryColor,
-      body: const Center(
+    return const Scaffold(
+      backgroundColor: Color.fromARGB(255, 2, 50, 62),
+      body: Center(
         child: Text(
           "Maya",
           style: TextStyle(

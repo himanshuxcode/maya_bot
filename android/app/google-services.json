@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "191762539327",
-    "project_id": "maya-bot-4c589",
-    "storage_bucket": "maya-bot-4c589.appspot.com"
+    "project_number": "240612398053",
+    "project_id": "maya-bot-3ff1c",
+    "storage_bucket": "maya-bot-3ff1c.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:191762539327:android:f98239ecbc05758e19298a",
+        "mobilesdk_app_id": "1:240612398053:android:a08742452faad3ba4f150c",
         "android_client_info": {
           "package_name": "com.example.maya_bot"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyAZ3msK_KJyZx91Ck37veNPPtfAN3NKk0g"
+          "current_key": "AIzaSyD1DzRxA57XF3F0GQ3xBMXK9ByPB0cIlFk"
         }
       ],
       "services": {

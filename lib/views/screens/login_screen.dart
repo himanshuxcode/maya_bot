@@ -40,7 +40,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     const Text(
                       "Welcome Back",
                       style: TextStyle(
-                        color: Colors.teal,
+                        color: Color.fromARGB(255, 2, 50, 62),
                         fontSize: 30,
                         fontWeight: FontWeight.w500,
                       ),
@@ -169,7 +169,7 @@ class _LoginScreenState extends State<LoginScreen> {
                               height: _size.height * 0.07,
                               width: double.infinity,
                               decoration: BoxDecoration(
-                                color: Colors.teal,
+                                color: Color.fromARGB(255, 2, 50, 62),
                                 borderRadius: const BorderRadius.all(
                                   Radius.circular(20),
                                 ),
@@ -216,7 +216,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                 child: const Text(
                                   'SignUp',
                                   style: TextStyle(
-                                    color: Colors.teal,
+                                    color: Color.fromARGB(255, 2, 50, 62),
                                   ),
                                 ),
                               ),
@@ -270,7 +270,7 @@ class _LoginScreenState extends State<LoginScreen> {
       } else {
         // Handle failed signup
         ScaffoldMessenger.of(context)
-            .showSnackBar(SnackBar(content: Text(response.toString())));
+            .showSnackBar(SnackBar(content: Text("Invaild Credintial")));
       }
     } catch (e) {
       // Handle error message
